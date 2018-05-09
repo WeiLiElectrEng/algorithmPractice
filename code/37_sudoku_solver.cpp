@@ -37,7 +37,8 @@ public:
     
     bool solver(vector< vector<char>> &b, int idx){
         /*
-        *  Know: the condition to going deep for validation or going wide for another try
+        *  1. know the condition to going deep for validation or going wide for another try
+	*  2. check array in isvalide() function should be filled with true or some fixed value( not the value cr, as cr could be 0)
         */
         int r=idx/9;
         int c=idx%9;
